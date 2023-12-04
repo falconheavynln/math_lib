@@ -17,8 +17,12 @@ def max(lst):
 
 
 def mean(lst):
-    pass
-
+    sum = 0
+    len = 0
+    for i in lst:
+        sum += i
+        len += 1
+    return sum/len
 
 def median(lst):
     pass
