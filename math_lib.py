@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def min(lst):
     min_so_far = np.inf
     for i in lst:
@@ -22,7 +23,8 @@ def mean(lst):
     for i in lst:
         sum += i
         len += 1
-    return sum/len
+    return sum / len
+
 
 def median(lst):
     pass
