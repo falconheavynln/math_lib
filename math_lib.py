@@ -1,5 +1,7 @@
+import numpy as np
+
 def min(lst):
-    min_so_far = 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    min_so_far = np.inf
     for i in lst:
         if i < min_so_far:
             min_so_far = i
@@ -7,7 +9,7 @@ def min(lst):
 
 
 def max(lst):
-    max_so_far = 0
+    max_so_far = -np.inf
     for i in lst:
         if i > max_so_far:
             max_so_far = i
