@@ -1,9 +1,19 @@
+import numpy as np
+
 def min(lst):
-    pass
+    min_so_far = np.inf
+    for i in lst:
+        if i < min_so_far:
+            min_so_far = i
+    return min_so_far
 
 
 def max(lst):
-    pass
+    max_so_far = -np.inf
+    for i in lst:
+        if i > max_so_far:
+            max_so_far = i
+    return max_so_far
 
 
 def mean(lst):
